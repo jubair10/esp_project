@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Advice generator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[var(--dark-blue)] w-screen">
+
+<div class="h-screen flex justify-items-center items-center">
+  <div class="rounded-xl min-w-64 mx-12 md:w-14 sm:w-1/2 lg:w-1/4 lg:m-auto md:m-auto sm:m-auto min-h-40 bg-[var(--dark-grayish-blue)]  p-4 relative flex flex-col justify-center items-center max-w-[400px]">
+
+    <div class="text text-[var(--neon-green)] font-semibold text-center tracking-[0.15rem] text-[.7em] mt-2">ADVICE #117</div>
+    <div id="advice" class="text-[var(--light-cyan)] text-[28px] text-center font-semibold mt-4">Today, do not use the words "Kind of", "Sort of" or "Maybe". It either is or it isn't.</div>
+    <img src="images/pattern-divider-desktop.svg" alt="pattern-divider" class="mt-2.5 mb-4">
+    <div class="bg-[var(--neon-green)] rounded-full  flex justify-center items-center -mb-10 p-5" id="btn">
+
+      <img src="images/icon-dice.svg" alt="dice" id="btn-image">
+    </div>
+  </div>
+</div>
+  <script src="main.js"></script>
+  <script src="server.js"></script>
+</body>
+</html>

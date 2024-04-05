@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Colors */
+
+/* Primary */
+:root {
+  --light-cyan: hsl(193, 38%, 86%); /* Light Cyan */
+  --neon-green: hsl(150, 100%, 66%); /* Neon Green */
+}
+
+/* Neutral */
+:root {
+  --grayish-blue: hsl(217, 19%, 38%); /* Grayish Blue */
+  --dark-grayish-blue: hsl(217, 19%, 24%); /* Dark Grayish Blue */
+  --dark-blue: hsl(218, 23%, 16%); /* Dark Blue */
+}
+
+* {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* Add this CSS to your stylesheet */
+#btn {
+  transition: box-shadow 0.5s; /* Add a transition for smooth effect */
+}
+
+#btn:enabled {
+  box-shadow: 0 0 40px var(--neon-green); /* Apply the glow effect when hovered */
+}
+#btn:hover {
+  box-shadow: 0 0 40px var(--neon-green); /* Apply the glow effect when hovered */
+}
+
+#btn-image {
+  transition: all ease 0.5;
+}
