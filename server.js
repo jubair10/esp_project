@@ -1,8 +1,7 @@
-// Import required modules
 const express = require('express');
 const bodyParser = require('body-parser');
+const path = require('path'); // Import the path module
 
-// Create Express app
 const app = express();
 
 // Serve static files (HTML, CSS, JS) from the 'public' directory
@@ -12,11 +11,10 @@ app.use(express.static(__dirname));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-    // send html , css, js file
+    // Send HTML file
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Define endpoint to receive POST requests
 app.post('/data_endpoint', (req, res) => {
   // Extract data from the request body
   const data = req.body;
@@ -28,8 +26,7 @@ app.post('/data_endpoint', (req, res) => {
   res.status(200).send('Data received successfully');
 });
 
-// Start the server
-const port = process.env.PORT || 3000; // Use the provided port or default to 3000
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
